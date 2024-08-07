@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cà phê Hương vị hỗn hợp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Các quy tắc CSS khác */
+
+        /* Ẩn danh sách sản phẩm mặc định */
+        .product-menu {
+            display: none;
+            position: absolute;
+            top: 60px; /* Điều chỉnh tùy theo chiều cao của thanh điều hướng */
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            width: 100%;
+        }
+
+        .product-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .product-menu ul li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product-menu ul li a {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+
+        .product-menu ul li a img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .main-nav li:hover .product-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img src="Ảnh chụp màn hình 2024-08-07 011139.png" width="1500px" height="50px" alt="Banner">
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#"><img style="width: 50px; height: 50px;" src="cafe-scaled.webp" alt="Logo"></a></li>
+            <li><input type="text" placeholder="Tìm kiếm..."><i class="fas fa-search"></i></li>
+            <li><a href="#"><button><i class="fas fa-user"></i> Đăng kí/Đăng nhập</button></a></li>
+            <li><a href="#"><button><i class="fas fa-shopping-cart"></i> Giỏ hàng</button></a></li>
+        </ul>
+    </nav>
+    <nav class="secondary-nav">
+        <ul>
+            <li><a href="#">Danh mục</a></li>
+            <li>
+                <a href="#">Sản phẩm</a>
+                <div class="product-menu">
+                    <ul>
+                        <li><a href="#"><img src="product1.jpg" alt="Sản phẩm 1">Sản phẩm 1 - 100,000 VNĐ</a></li>
+                        <li><a href="#"><img src="product2.jpg" alt="Sản phẩm 2">Sản phẩm 2 - 150,000 VNĐ</a></li>
+                        <li><a href="#"><img src="product3.jpg" alt="Sản phẩm 3">Sản phẩm 3 - 200,000 VNĐ</a></li>
+                        <li><a href="#"><img src="product4.jpg" alt="Sản phẩm 4">Sản phẩm 4 - 250,000 VNĐ</a></li>
+                        <li><a href="#"><img src="product5.jpg" alt="Sản phẩm 5">Sản phẩm 5 - 300,000 VNĐ</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Khuyến mãi</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+        </ul>
+    </nav>
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="b5ae4e38aabd411d0864085f623c2046.jpg" alt="Ảnh 1">
+            <img src="tnlshanghai1.jpg" alt="Ảnh 2">
+            <img src="tnlshanghai3.jpg" alt="Ảnh 3">
+        </div>
+    </div>
+    <section class="products">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="50df8eb5de0938d8c1617220468610fc.jpg" alt="Sản phẩm 1">
+                <h3>Sản phẩm 1</h3>
+                <p>Giá: 100,000 VNĐ</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product-item">
+                <img src="43-1582740515-cafe-trung-nguyen-g7-2-in-10.jpg" alt="Sản phẩm 2">
+                <h3>Sản phẩm 2</h3>
+                <p>Giá: 150,000 VNĐ</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product-item">
+                <img src="product3.jpg" alt="Sản phẩm 3">
+                <h3>Sản phẩm 3</h3>
+                <p>Giá: 200,000 VNĐ</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product-item">
+                <img src="product4.jpg" alt="Sản phẩm 4">
+                <h3>Sản phẩm 4</h3>
+                <p>Giá: 250,000 VNĐ</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product-item">
+                <img src="product5.jpg" alt="Sản phẩm 5">
+                <h3>Sản phẩm 5</h3>
+                <p>Giá: 300,000 VNĐ</p>
+                <button>Mua ngay</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-info">
+            <h2>Tên Cửa Hàng</h2>
+            <p>Địa chỉ: Số 123, Đường ABC, Thành phố XYZ</p>
+            <p>Số điện thoại: <i class="fas fa-phone"></i> 0979-401-426</p>
+            <p>Email: <i class="fas fa-envelope"></i> <a href="mailto:example@gmail.com">duytu178204@gmail.com</a></p>
+        </div>
+        <div class="footer-support">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Chính sách và điều khoản</a></li>
+                <li><a href="#">Chính sách giao nhận hàng</a></li>
+                <li><a href="#">Chính sách bảo hành và đổi trả</a></li>
+                <li><a href="#">Chính sách hoàn trả hàng và hoàn tiền</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Liên hệ với chúng tôi</h3>
+            <a href="tel:0979401426" class="footer-icon"><i class="fas fa-phone"></i></a>
+            <a href="mailto:duytu178204@gmail.com.com" class="footer-icon"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100046391213815" class="footer-icon"><i class="fab fa-facebook-messenger"></i></a>
+        </div>
+    </footer>
+    <script src="java.js"></script>
+</body>
+</html>

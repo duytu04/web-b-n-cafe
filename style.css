@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-nav ul, .secondary-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.main-nav ul {
+    justify-content: space-between;
+}
+
+.secondary-nav ul {
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+nav ul li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav ul li input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+nav ul li img {
+    vertical-align: middle;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+    height: auto;
+}
+
+/* Thêm hiệu ứng để tự động chuyển ảnh nếu cần */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.carousel-images {
+    animation: slide 10s infinite;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-info {
+    margin-bottom: 20px;
+}
+
+.footer-info h2 {
+    margin: 0;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-support {
+    margin-bottom: 20px;
+}
+
+.footer-support h3 {
+    margin: 0;
+}
+
+.footer-support ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-support ul li {
+    margin: 5px 0;
+}
+
+.footer-support ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social h3 {
+    margin: 0;
+}
+
+.footer-icon {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.footer-icon:hover {
+    color: #ccc;
+}
